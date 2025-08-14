@@ -1,79 +1,168 @@
-/*
- * Basisschablone für die Gstanzl-Website.
- * Dieses Stylesheet gibt der Seite ein sauberes und freundliches Design.
- * Bei Bedarf kann der Benutzer die Farben oder Typografie später anpassen.
- */
-
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
 }
 
 header {
-    background-color: #4a4e69;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #556B2F; /* dunkles Olivgrün */
+  color: #fff;
+  padding: 0.5em 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+header li {
+  margin: 0 1em;
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.2s ease-in-out;
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav a:hover {
-    color: #ffd166;
+header a:hover {
+  text-decoration: underline;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+header a.active {
+  text-decoration: underline;
 }
 
-section h2 {
-    margin-top: 0;
-    color: #4a4e69;
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+h1, h2, h3 {
+  color: #2F4F2F; /* etwas dunkleres Grün für Überschriften */
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  margin: 0.5em 0 1.2em 0;
 }
 
 ul {
-    padding-left: 20px;
+  margin: 0.5em 0 1.5em 1.2em;
+}
+
+ul li {
+  margin: 0.3em 0;
+}
+
+ul li a {
+  color: #336633;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.verse {
+  margin: 1em 0;
+  padding-left: 0.5em;
+}
+
+.highlight {
+  background-color: #f9f9e0;
+  border-left: 4px solid #556B2F;
+  padding: 0.8em;
+  font-style: italic;
+}
+
+form {
+  max-width: 500px;
+  margin: 1em 0 2em 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin: 0.5em 0 0.2em;
+  font-weight: 600;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 0.4em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.95em;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
+  border-color: #88a066;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #556B2F;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button[type="submit"]:hover {
+  background-color: #6b8e23;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #4a4e69;
-    color: #ffffff;
-    font-size: 0.9rem;
+  background-color: #f0f0f0;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 2em;
 }
 
 @media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
+  header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header li {
+    margin: 0.5em 0;
+  }
+  main {
+    padding: 0 0.5em;
+  }
 }
