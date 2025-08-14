@@ -1,53 +1,509 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gstanzl Volksmusik</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gstanzl Sammlung – Startseite</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header section with site title and simple navigation -->
-    <header>
-        <h1>Willkommen bei Gstanzl Volksmusik</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Über&nbsp;Uns</a></li>
-                <li><a href="#gstanzl">Gstanzln</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Startseite</a></li>
+        <li><a href="ueber.html">Über Gstanzln</a></li>
+        <li><a href="sammlung.html">Sammlung</a></li>
+        <li><a href="kategorien.html">Kategorien</a></li>
+        <li><a href="mitmachen.html">Mitmachen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Willkommen auf unserer Gstanzl-Website!</h1>
+    <p>Hier dreht sich alles um traditionelle österreichische <strong>Gstanzln</strong> – kurze, humorvolle Vierzeiler, mit denen man andere augenzwinkernd auf die Schaufel nimmt. Entdecke unsere umfangreiche Sammlung, erfahre Wissenswertes über die Geschichte dieser besonderen Liedform und lass dich von der Vielfalt überraschen.</p>
+    <p>Auf unserer Seite findest du Gstanzln zu vielen Themen – von Liebe über Spott bis Politik. Stöbere in der Sammlung oder wähle eine <a href="kategorien.html">Kategorie</a>, um gezielt Gstanzln zu deinem Lieblingsthema zu lesen. Und wenn dich die Muse küsst, kannst du unter <a href="mitmachen.html">Mitmachen</a> sogar dein eigenes Gstanzl einsenden!</p>
+    <h2>Gstanzl des Tages</h2>
+    <p class="verse highlight">Mei Dirndl is hübsch<br>
+    wia a Engerl im Licht,<br>
+    nur kochen, des ko s’ net –<br>
+    besser lern s’ es nicht.</p>
+    <p><em><strong>Demnächst:</strong> Ein Zufalls-Gstanzl auf Knopfdruck – wir arbeiten an einem Generator, der dir per Zufallsglück ein Gstanzl aus unserer Sammlung anzeigt!</em></p>
+    <p>Viel Spaß beim Schmökern und Lauschen – und denk dran: Wer ko, der ko (wer kann, der kann) – in diesem Sinne, frohes Gstanzl-Singen!</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gstanzl-Sammlung (Beispielprojekt)</p>
+  </footer>
+</body>
+</html>
 
-    <!-- About section explaining the tradition of Gstanzl -->
-    <section id="about">
-        <h2>Über Volksmusik und Gstanzl</h2>
-        <p>Gstanzl sind kurze Spottgesänge aus dem alpenländischen Raum. Sie sind Teil der österreichischen Volksmusik
-            und erzählen humorvoll Geschichten des Alltags. Diese Seite widmet sich der Sammlung und Pflege dieser
-            einzigartigen Tradition.</p>
+<!-- ueber.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über Gstanzln – Gstanzl Sammlung</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html" class="active">Über Gstanzln</a></li>
+        <li><a href="sammlung.html">Sammlung</a></li>
+        <li><a href="kategorien.html">Kategorien</a></li>
+        <li><a href="mitmachen.html">Mitmachen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Über Gstanzln</h1>
+    <section>
+      <h2>Was ist ein Gstanzl?</h2>
+      <p>Ein Gstanzl ist ein kurzer, meist vierzeiliger Reim in Mundart, der humorvoll und oft auch ein wenig derb daherkommt. Mit einem Gstanzl kann man jemanden liebevoll – oder auch einmal etwas deftiger – <em>auf die Schaufel nehmen</em>, also scherzhaft aufziehen. Wichtig dabei: Solange der Spaß nicht unter die Gürtellinie geht, nimmt es auch derjenige, der auf’s Korn genommen wird, niemand übel. Im Gegenteil: Wer bei einem Gstanzl-Abend gar nicht erwähnt wird, der ist eigentlich <em>gar niemand</em> – ein wenig geneckt zu werden gehört also dazu!</p>
+      <p>Gstanzln gehören zum alpenländischen Brauchtum und sind eine traditionelle Form des Liedguts in Österreich und Bayern. Es handelt sich um kurze, pointierte Strophen mit Reim, die oft spontan gedichtet und gesungen werden. In der Regel bestehen sie aus vier Zeilen mit zwei Reimpaaren – das ist die klassische Gstanzl-Form. Diese eingängige Struktur macht es leicht, humorvolle Botschaften prägnant rüberzubringen. Es gibt aber auch Varianten mit 8 Zeilen oder sogar längeren Formen, doch der Vierzeiler ist am weitesten verbreitet.</p>
+    </section>
+    <section>
+      <h2>Herkunft und Tradition</h2>
+      <p>Der Begriff <strong>Gstanzl</strong> leitet sich vermutlich vom italienischen Wort <em>“stanza”</em> (Strophe) ab. Entstanden sind Gstanzln in der Volkskultur des Alpenraums, und viele Volkslieder setzen sich aus aneinandergereihten Gstanzln zusammen – oft garniert mit einem jodelnden Ruf am Ende. Je nach Region gibt es unterschiedliche Bezeichnungen: In Oberösterreich sagt man Gstanzl oder Tanzl, in Niederösterreich auch Gsangl oder Sprüchl, in Bayern kennt man Begriffe wie <em>Schnaderhüpfl</em> oder <em>Schnaderhackl</em>, und in Salzburg heißen sie gern auch Stieglhupfa. Trotz der vielen Namen ist das Prinzip immer ähnlich: kurze, gereimte Spottverse, die zum Schmunzeln bringen.</p>
+      <p>Gstanzln werden traditionell bei verschiedensten Anlässen vorgetragen. Ob bei Volksfesten, Hoagarten (musikalischen Rundenen), beim Heurigen (Weinlokal) oder auf Hochzeiten – überall dort, wo gesungen und gefeiert wird, sind Gstanzln zu Hause. Meist werden sie von Musik (zum Beispiel Ziehharmonika oder Gitarre) begleitet. Ein geübter Gstanzlsänger kann spontan aus dem Stegreif dichten und so auf aktuelle Ereignisse oder anwesende Personen eingehen – sehr zur Gaudi des Publikums. Dieses spontane “Ansingen” sorgt oft für Lachsalven und kann stundenlang weitergehen, ohne dass es langweilig wird.</p>
+    </section>
+    <section>
+      <h2>Gstanzl heute – lebendig und beliebt</h2>
+      <p>Auch in der modernen Zeit sind Gstanzln lebendig geblieben. Es gibt sogar Wettbewerbe, sogenannte <strong>Gstanzl-Battles</strong>, bei denen Gstanzlsängerinnen und -sänger ihr Können messen. In verschiedenen Kategorien – etwa politische Gstanzln oder Hochzeitsgstanzln – treten sie gegeneinander an und improvisieren humorvolle Strophen. Eine Jury und das Publikum küren dann den besten Verseschmied. Solche Events, ebenso wie regelmäßige Gstanzlsänger-Treffen (besonders beliebt in Salzburg, Oberösterreich und Bayern), tragen dazu bei, dass die Tradition weiterlebt und auch junge Leute ihren Spaß daran finden.</p>
+      <p>Früher waren es vor allem Männer, die Gstanzln gesungen haben. Heute schwingen aber auch immer mehr Frauen gekonnt die ironische Klinge und mischen die Männerrunde mit spitzer Zunge auf. Das Gstanzlsingen fördert Geselligkeit und kreativen Witz – und es verbindet Generationen. Vom Großvater bis zur Enkelin können alle gemeinsam lachen, wenn ein frecher Vers gelungen ist.</p>
+    </section>
+    <section>
+      <h2>Ausblick: Unsere Website &amp; Zukunftspläne</h2>
+      <p>Wir hoffen, dass du auf unserer Gstanzl-Website viel Freude hast – doch damit nicht genug! Wir haben noch einiges vor, um die Seite noch interaktiver und umfangreicher zu gestalten:</p>
+      <ul>
+        <li><strong>Zufalls-Gstanzl:</strong> In Kürze wird es einen Button geben, mit dem du dir per Zufallsgenerator ein Gstanzl anzeigen lassen kannst – lass dich überraschen!</li>
+        <li><strong>Audio-Erlebnisse:</strong> Wir planen, ausgewählte Gstanzln auch als Audio bereitzustellen. So kannst du dir anhören, wie sie gesungen und gejodelt werden – fast so, als wärst du live dabei.</li>
+        <li><strong>Community &amp; Wettbewerbe:</strong> In Zukunft möchten wir die besten eingesendeten Gstanzln küren und veröffentlichen. Vielleicht organisieren wir sogar einen kleinen Online-Gstanzl-Wettbewerb, bei dem ihr abstimmen könnt, welche neuen Vierzeiler am meisten überzeugen.</li>
+      </ul>
+      <p>Du siehst, es bleibt spannend. Schau also gerne immer wieder vorbei und begleite uns dabei, diese wunderbare Tradition im Internet lebendig zu halten. In diesem Sinne: Danke fürs Lesen und viel Vergnügen mit unseren Gstanzln!</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gstanzl-Sammlung (Beispielprojekt)</p>
+  </footer>
+</body>
+</html>
+
+<!-- sammlung.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gstanzl Sammlung – Alle Gstanzln</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html">Über Gstanzln</a></li>
+        <li><a href="sammlung.html" class="active">Sammlung</a></li>
+        <li><a href="kategorien.html">Kategorien</a></li>
+        <li><a href="mitmachen.html">Mitmachen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Gstanzl Sammlung</h1>
+    <p>Hier findest du unsere Sammlung von Gstanzln in voller Länge. Von lustigen Liebes-Stanzln bis zu spöttischen Versen über Politik – lehn dich zurück und genieße die Vielfalt! (Tipp: Über die <a href="kategorien.html">Kategorien</a> kannst du direkt zu deinem Lieblingsthema springen.)</p>
+
+    <h2 id="liebe">Liebe</h2>
+    <p id="liebe1" class="verse">Mei Dirndl is hübsch<br>
+    wia a Engerl im Licht,<br>
+    nur kochen, des ko s’ net –<br>
+    besser lern s’ es nicht.</p>
+
+    <p id="liebe2" class="verse">Hab a neich’s Haus<br>
+    mit an nagelneich’n Bett,<br>
+    a liabs Diandl hab i,<br>
+    oba nei derf i’s net.</p>
+
+    <p id="liebe3" class="verse">Mei Diandl, ei ei,<br>
+    i hab di so gern,<br>
+    und liab di so sehr,<br>
+    dass i narrisch kunnt wern.</p>
+
+    <p id="liebe4" class="verse">Seit zwanzig Johr hör i<br>
+    ihr Schimpfn jed’n Tog,<br>
+    wird’s einmol stad, schau i glei<br>
+    erschrocken aus – drum liab i ihr Gschimpf zhaus.</p>
+
+    <p id="liebe5" class="verse">Mei Freundl is teuer,<br>
+    kauft Schuh und a Gwand,<br>
+    mei Börsl wird leicht,<br>
+    ihre Taschn schwer beinand.<br>
+    Doch solang s’ strahlt<br>
+    wia a neicher Stern,<br>
+    zahl i all d’ Rechnungen –<br>
+    i hab s’ halt gern.</p>
+
+    <p id="liebe6" class="verse">Mei Dirndl is liabreich,<br>
+    aba Geld hot’s net viel,<br>
+    is ma liaba so –<br>
+    Geld macht im Bett ka G’fühl.</p>
+
+    <h2 id="spott">Spott</h2>
+    <p id="spott1" class="verse">I hob amoi beicht’,<br>
+    mir fallt’s Trink’n ned leicht,<br>
+    sogt da Pfarrer zu mir:<br>
+    “Jo, mir geht’s so wia dir!”</p>
+
+    <p id="spott2" class="verse">Mei Mo tuat wia a Chef,<br>
+    doch i kriag kan Graus –<br>
+    i schnipp nur mit’m Finger<br>
+    und scho is a aus.<br>
+    Vor Fremden spüt er<br>
+    den brüllenden Löw’n,<br>
+    dahoam is er zahm –<br>
+    i dressier ihn schön.</p>
+
+    <p id="spott3" class="verse">Da hot a oana g’sungan,<br>
+    des hot si net greimt,<br>
+    do ham’s eam d’ Zung’n<br>
+    an seim Oarsch hi gleimt.</p>
+
+    <p id="spott4" class="verse">Mei Schwiegermuatter<br>
+    is giftig wia a Schlang’,<br>
+    warum s’ no lebt,<br>
+    des dauert ma z’ lang.</p>
+
+    <p id="spott5" class="verse">Unser Nachbar hat an langen<br>
+    Zinken im G’sicht,<br>
+    schaut a zum Fenster eina,<br>
+    verstellt er’s ganze Licht.<br>
+    Kummt a amoi z’nahe,<br>
+    pass i auf bei mir,<br>
+    sunst pickt se sei Nas’<br>
+    an meim Bierglas no dir.</p>
+
+    <p id="spott6" class="verse">Da Hansi hat gschwor’n:<br>
+    “Heit rühr i kan Schnaps mehr a!”<br>
+    Ka Stund spater sitzt a<br>
+    im Wirtshaus beim drittn Maß – na, Prost!</p>
+
+    <h2 id="politik">Politik</h2>
+    <p id="politik1" class="verse">Vor der Wahl gibt a Politiker<br>
+    jedem Kind an dicken Kuss,<br>
+    nach der Wahl, sog i dir,<br>
+    is mit da Freundlichkeit Schluss.</p>
+
+    <p id="politik2" class="verse">Im Parlament schnarchen<br>
+    d’ Herrn Abgeordneten laut,<br>
+    ka Wunder – auf unsre Zukunft<br>
+    baut do kana mehr auf.</p>
+
+    <p id="politik3" class="verse">D’ Regierung hot heit<br>
+    wieder a neiche Steuer brocht –<br>
+    aufs Atmen und Schnaufen,<br>
+    wos ham’s se do docht?</p>
+
+    <p id="politik4" class="verse">Benzin wird immer teurer,<br>
+    doch d’ Politiker grinss bloß,<br>
+    “Fahrts mit’m Radl!” sogt einer<br>
+    und fährt mit seim Benz davon.</p>
+
+    <p id="politik5" class="verse">A rechte Bananenrepublik<br>
+    ham’s aus unserm Land g’mocht,<br>
+    mei Opa sogt: “In 80 Johr<br>
+    ham’s des no nia so weid brocht!”</p>
+
+    <p id="politik6" class="verse">So a Depp wia a Politiker<br>
+    dat i a gern amoi sei:<br>
+    vü reden, vü kassieren –<br>
+    und nix macha dabei!</p>
+
+    <h2 id="heimat">Heimat</h2>
+    <p id="heimat1" class="verse">Koane Stränd san so sche,<br>
+    koane Stodt is so fein,<br>
+    wia unsre Berg und Tal<br>
+    bei an guatn Glas Wein.<br>
+    Dahoam is hoalt dahoam –<br>
+    des spür i tief drin,<br>
+    do ghört ma zsamm<br>
+    und’s Lebm hod Sinn.</p>
+
+    <p id="heimat2" class="verse">Mir fiarn bei uns jedes Feste<br>
+    recht lang in d’ Nocht,<br>
+    da Pfarrer schimpft zwar,<br>
+    ham’s trotzdem gmacht.<br>
+    Ob Kirta, ob Erntdank –<br>
+    uns is ollas recht,<br>
+    Hauptsach ma hom Gaudi<br>
+    und’s Bier is ned schlecht!</p>
+
+    <p id="heimat3" class="verse">Unser Dorf is klane,<br>
+    aber stolz san ma sehr,<br>
+    de Leit kennan si –<br>
+    in da Stodt nimma mehr.<br>
+    Mir hoitn z’samm, egal<br>
+    ob’s brennt oder schneit,<br>
+    sowas gibt’s in da Stodt nimma –<br>
+    do hot ja kaner Zeit.</p>
+
+    <p id="heimat4" class="verse">Auf’m Bauernhof stinkt’s öfters<br>
+    kräftig nach Mist,<br>
+    doch uns gfallt’s trotzdem,<br>
+    weil’s unsre Hoamat is.</p>
+
+    <p id="heimat5" class="verse">In da Fruah weckt uns koa Hupn,<br>
+    sondern a Gockl-Gschrei,<br>
+    da Städter schaut bled,<br>
+    uns gfallt’s – des muaß so sei!</p>
+
+    <p id="heimat6" class="verse">In Bayern gibt’s Bier,<br>
+    und in Wien trinkt ma Wein,<br>
+    bei uns gibt’s Most –<br>
+    und der schmeckt so fein.<br>
+    Jeder hod sei Gschmack,<br>
+    des is a so gut,<br>
+    Hauptsach ma stoßt o<span>'</span> zsam<br>
+    und hom a guaten Mut!</p>
+
+    <h2 id="wirtshaus">Wirtshaus &amp; Feste</h2>
+    <p id="wirt1" class="verse">Lustig und kreizfidel –<br>
+    hoam gemma heit net glei!<br>
+    Hoam gemma morgn friah,<br>
+    oder bleibm glei do – jöhei!</p>
+
+    <p id="wirt2" class="verse">Bin gstern um Viere<br>
+    erst hoam kumma, bummvoll,<br>
+    war d’ Haustür zugesperrt –<br>
+    mei Weib is wirklich toll...</p>
+
+    <p id="wirt3" class="verse">Da Bräutigam lacht<br>
+    heit no so froh und frei,<br>
+    er woaß no net –<br>
+    mit da Freiheit is glei vorbei.</p>
+
+    <p id="wirt4" class="verse">Die Braut is a Engerl<br>
+    im weißen G’wandl fein,<br>
+    der Bräutigam hockt nervös<br>
+    am Klo und kimmt nimma nei.</p>
+
+    <p id="wirt5" class="verse">Da Steff trinkt 10 Maß<br>
+    und steht no kerzengrad,<br>
+    da Franz muass nach drei<br>
+    scho aufi ins Bad.</p>
+
+    <p id="wirt6" class="verse">Jetzt ham ma halt gsunga,<br>
+    jetzt hear ma halt auf,<br>
+    auf an lustigen Tanz<br>
+    g’heart a Walzerl drauf.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gstanzl-Sammlung (Beispielprojekt)</p>
+  </footer>
+</body>
+</html>
+
+<!-- kategorien.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kategorien – Gstanzl Sammlung</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html">Über Gstanzln</a></li>
+        <li><a href="sammlung.html">Sammlung</a></li>
+        <li><a href="kategorien.html" class="active">Kategorien</a></li>
+        <li><a href="mitmachen.html">Mitmachen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Gstanzl Kategorien</h1>
+    <p>Unsere Gstanzln sind thematisch sortiert. Wähle eine Kategorie, um passende Vierzeiler zu finden. Von der Liebe über spöttische Reime bis hin zu politischen Pointen ist für jeden Geschmack etwas dabei!</p>
+
+    <section>
+      <h2>Liebe</h2>
+      <p>Gstanzln über die <strong>Liebe</strong> sind mal romantisch, mal zweideutig und oft herrlich übertrieben. In dieser Kategorie dreht sich alles um Liebesfreud und Liebesleid – natürlich immer mit einem Augenzwinkern.</p>
+      <ul>
+        <li><a href="sammlung.html#liebe1">Mei Dirndl is hübsch wia a Engerl im Licht…</a></li>
+        <li><a href="sammlung.html#liebe2">Hab a neich’s Haus mit an nagelneich’n Bett…</a></li>
+        <li><a href="sammlung.html#liebe3">Mei Diandl, ei ei, i hab di so gern…</a></li>
+        <li><a href="sammlung.html#liebe4">Seit zwanzig Johr hör i ihr Schimpfn jed’n Tog…</a></li>
+        <li><a href="sammlung.html#liebe5">Mei Freundl is teuer, kauft Schuh und a Gwand…</a></li>
+        <li><a href="sammlung.html#liebe6">Mei Dirndl is liabreich, aba Geld hot’s net viel…</a></li>
+      </ul>
     </section>
 
-    <!-- Examples of Gstanzln. Users can expand this list by editing the repository. -->
-    <section id="gstanzl">
-        <h2>Beispiele für Gstanzln</h2>
-        <ul>
-            <li>Da Hans is a rechter Lump, er trinkt und raucht und braucht an Trumpf.</li>
-            <li>I bin da Max und komm aus’m G'standl, spiel auf da Zither und sing mei Gstanzl.</li>
-            <li>A schöne Dirndl mit an rotn Huat, tanz mit dir bis da Bummerl ruad.</li>
-            <li>Des Leben is a Gstanzl, mal laut und mal leise, des sing ma mit Herz und auf unsere Weise.</li>
-        </ul>
+    <section>
+      <h2>Spott</h2>
+      <p><strong>Spott-Gstanzln</strong> sind freche Vierzeiler, in denen Freunde, Nachbarn oder Schwiegermütter humorvoll auf die Schippe genommen werden. Hier wird kein Blatt vor den Mund genommen – aber alles natürlich in guter, schelmischer Absicht!</p>
+      <ul>
+        <li><a href="sammlung.html#spott1">I hob amoi beicht’, mir fallt’s Trink’n ned leicht…</a></li>
+        <li><a href="sammlung.html#spott2">Mei Mo tuat wia a Chef, doch i kriag kan Graus…</a></li>
+        <li><a href="sammlung.html#spott3">Da hot a oana g’sungan, des hot si net greimt…</a></li>
+        <li><a href="sammlung.html#spott4">Mei Schwiegermuatter is giftig wia a Schlang’…</a></li>
+        <li><a href="sammlung.html#spott5">Unser Nachbar hat an langen Zinken im G’sicht…</a></li>
+        <li><a href="sammlung.html#spott6">Da Hansi hat gschwor’n: “Heit rühr i kan Schnaps mehr a!”…</a></li>
+      </ul>
     </section>
 
-    <!-- Contact section encourages contributions via GitHub Issues -->
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p>Haben Sie eigene Gstanzln oder möchten Sie mehr erfahren? Öffnen Sie ein Issue in diesem GitHub-Projekt,
-            und teilen Sie Ihre Beiträge mit uns. Wir freuen uns über jede Nachricht!</p>
+    <section>
+      <h2>Politik</h2>
+      <p>In der Kategorie <strong>Politik</strong> wird die hohe Politik auf den Boden der Tatsachen geholt – satirisch und ohne Scheu. Ob Wahlversprechen, schlafende Abgeordnete oder neue Steuern: Hier bekommen die “Da oben” ihr Fett ab.</p>
+      <ul>
+        <li><a href="sammlung.html#politik1">Vor der Wahl gibt a Politiker jedem Kind a Kuss…</a></li>
+        <li><a href="sammlung.html#politik2">Im Parlament schnarchen d’ Herrn Abgeordneten laut…</a></li>
+        <li><a href="sammlung.html#politik3">D’ Regierung hot heit wieder a neiche Steuer brocht…</a></li>
+        <li><a href="sammlung.html#politik4">Benzin wird immer teurer, doch d’ Politiker grinss bloß…</a></li>
+        <li><a href="sammlung.html#politik5">A rechte Bananenrepublik ham’s aus unserm Land g’mocht…</a></li>
+        <li><a href="sammlung.html#politik6">So a Depp wia a Politiker dat i a gern amoi sei…</a></li>
+      </ul>
     </section>
 
-    <!-- Footer with copyright information -->
-    <footer>
-        &copy; 2025 Gstanzl Volksmusik. Erstellt mit ❤️.
-    </footer>
+    <section>
+      <h2>Heimat</h2>
+      <p><strong>Heimat-Gstanzln</strong> besingen mit Stolz und Witz das eigene Dorf, die Landschaft und die Lebensart. Von der schönen Bergwelt bis zum Duft vom Misthaufen – hier spürt man die Liebe zur Heimat in jedem Vers.</p>
+      <ul>
+        <li><a href="sammlung.html#heimat1">Koane Stränd san so sche, koane Stodt is so fein…</a></li>
+        <li><a href="sammlung.html#heimat2">Mir fiarn bei uns jedes Feste recht lang in d’ Nocht…</a></li>
+        <li><a href="sammlung.html#heimat3">Unser Dorf is klane, aber stolz san ma sehr…</a></li>
+        <li><a href="sammlung.html#heimat4">Auf’m Bauernhof stinkt’s öfters kräftig nach Mist…</a></li>
+        <li><a href="sammlung.html#heimat5">In da Fruah weckt uns koa Hupn, sondern a Gockl-Gschrei…</a></li>
+        <li><a href="sammlung.html#heimat6">In Bayern gibt’s Bier, und in Wien trinkt ma Wein…</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Wirtshaus &amp; Feste</h2>
+      <p>In dieser Kategorie dreht sich alles ums <strong>Wirtshausleben</strong> und das Feiern: lustige Begebenheiten beim Zechen, Hochzeitsscherze und Trinkgelage. Prost Mahlzeit – und viel Vergnügen mit unseren Wirtshaus-Gstanzln!</p>
+      <ul>
+        <li><a href="sammlung.html#wirt1">Lustig und kreizfidel – hoam gemma heit net glei…</a></li>
+        <li><a href="sammlung.html#wirt2">Bin gstern um Viere erst hoam kumma, bummvoll…</a></li>
+        <li><a href="sammlung.html#wirt3">Da Bräutigam lacht heit no so froh und frei…</a></li>
+        <li><a href="sammlung.html#wirt4">Die Braut is a Engerl im weißen G’wandl fein…</a></li>
+        <li><a href="sammlung.html#wirt5">Da Steff trinkt 10 Maß und steht no kerzengrad…</a></li>
+        <li><a href="sammlung.html#wirt6">Jetzt ham ma halt gsunga, jetzt hear ma halt auf…</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gstanzl-Sammlung (Beispielprojekt)</p>
+  </footer>
+</body>
+</html>
+
+<!-- mitmachen.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitmachen – Gstanzl Sammlung</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html">Über Gstanzln</a></li>
+        <li><a href="sammlung.html">Sammlung</a></li>
+        <li><a href="kategorien.html">Kategorien</a></li>
+        <li><a href="mitmachen.html" class="active">Mitmachen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Mitmachen – Dein eigenes Gstanzl</h1>
+    <p>Du bist selbst ein kleiner Gstanzl-Dichter oder -Dichterin? Dann mach mit! Schick uns dein eigenes Gstanzl und werde Teil dieser Sammlung. Egal ob lustig, frech oder nachdenklich – wir freuen uns auf deine kreativen Vierzeiler.</p>
+    <p>Fülle einfach das folgende Formular aus. Mit etwas Glück wird dein Gstanzl bald auf unserer Seite erscheinen! (Bitte achte darauf, dass dein Gstanzl eigenständig gedichtet ist und keine beleidigenden Inhalte enthält.)</p>
+    <form action="#" method="post" class="einsend-formular">
+      <label for="name">Dein Name:</label>
+      <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+
+      <label for="email">Deine E-Mail:</label>
+      <input type="email" id="email" name="email" placeholder="max@example.com" required>
+
+      <label for="category">Kategorie deines Gstanzls:</label>
+      <select id="category" name="category">
+        <option value="Liebe">Liebe</option>
+        <option value="Spott">Spott</option>
+        <option value="Politik">Politik</option>
+        <option value="Heimat">Heimat</option>
+        <option value="Wirtshaus">Wirtshaus &amp; Feste</option>
+        <option value="Sonstiges">Sonstiges</option>
+      </select>
+
+      <label for="gstanzltext">Dein Gstanzl-Text:</label>
+      <textarea id="gstanzltext" name="gstanzltext" rows="4" placeholder="Schreib hier dein vierzeiliges Gstanzl auf..." required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+    <p><em>Hinweis:</em> Mit dem Einsenden erklärst du dich einverstanden, dass wir dein Gstanzl (mit deinem Vornamen oder Pseudonym) auf unserer Website veröffentlichen dürfen. Wir behalten uns vor, eingesandte Inhalte ggf. zu bearbeiten oder nicht zu veröffentlichen, falls sie den Richtlinien nicht entsprechen.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gstanzl-Sammlung (Beispielprojekt)</p>
+  </footer>
+</body>
+</html>
+
+<!-- kontakt.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Gstanzl Sammlung</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html">Über Gstanzln</a></li>
+        <li><a href="sammlung.html">Sammlung</a></li>
+        <li><a href="kategorien.html">Kategorien</a></li>
+        <li><a href="mitmachen.html">Mitmachen</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Kontakt</h1>
+    <p>Hast du Fragen, Anregungen oder Feedback? Wir freuen uns, von dir zu hören! Nutze einfach das Kontaktformular unten oder schreibe uns direkt eine E-Mail. Wir melden uns so bald wie möglich bei dir.</p>
+    <form action="#" method="post" class="kontakt-formular">
+      <label for="contact-name">Name:</label>
+      <input type="text" id="contact-name" name="contact-name" placeholder="Dein Name" required>
+
+      <label for="contact-email">E-Mail:</label>
+      <input type="email" id="contact-email" name="contact-email" placeholder="dein.name@example.com" required>
+
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Womit können wir helfen?" required></textarea>
+
+      <button type="submit">Nachricht senden</button>
+    </form>
+    <p>Oder schreib uns eine E-Mail an: <a href="mailto:info@gstanzlseite.at">info@gstanzlseite.at</a></p>
+    <p>Wir sind bemüht, alle Anfragen zeitnah zu beantworten. Danke für dein Interesse an unserer Gstanzl-Sammlung!</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gstanzl-Sammlung (Beispielprojekt)</p>
+  </footer>
 </body>
 </html>
