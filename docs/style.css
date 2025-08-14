@@ -1,138 +1,230 @@
-/* styles.css */
-body {
+/* Allgemeine Stile und Variablen */
+:root {
+  --color-bg: #fdf5e6;          /* warmer Creme-Hintergrund (Old Lace) */
+  --color-primary: #5e3c0b;     /* dunkler Braunton (für Header, Footer, Akzente) */
+  --color-secondary: #8b0000;   /* dunkles Rot (für Akzente, Links) */
+  --color-text: #2e2e2e;        /* dunkles Grau für Fließtext */
+  --color-text-light: #f9f5f0;  /* sehr hell (für Text auf dunklem Hintergrund) */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Merriweather', serif;
+}
+
+/* Grundlayout */
+html, body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  color: #333;
-  background-color: #fff;
+  padding: 0;
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
 }
 
-header {
-  background-color: #556B2F; /* dunkles Olivgrün */
-  color: #fff;
-  padding: 0.5em 0;
+/* Überschriften-Stile */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: var(--color-primary);
 }
-
-header ul {
-  list-style: none;
+h1.site-title {
+  font-size: 2em;
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+}
+.site-tagline {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.1em;
+  margin: 0;
+  color: var(--color-text-light);
 }
 
-header li {
-  margin: 0 1em;
-}
-
-header a {
-  color: #fff;
+/* Link-Stile */
+a {
+  color: var(--color-secondary);
   text-decoration: none;
   font-weight: bold;
 }
-
-header a:hover {
+a:hover, a:focus {
+  color: #a30000; /* etwas helleres Rot beim Hover */
   text-decoration: underline;
 }
 
-header a.active {
-  text-decoration: underline;
+/* Header und Navigation */
+.site-header {
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 1em;
+  text-align: center;
+  /* Hintergrundtextur oder -muster könnte hier optional eingefügt werden */
+}
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.main-nav {
+  position: sticky;
+  top: 0;
+  background: var(--color-primary);
+  /* Kleiner Schatten für Sichtbarkeit der fixierten Navigation */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  display: inline-block;
+  margin: 0;
+}
+.main-nav a {
+  display: inline-block;
+  padding: 0.8em 1em;
+  color: var(--color-text-light);
+}
+.main-nav a:hover {
+  background: var(--color-secondary);
+  color: var(--color-text-light);
 }
 
-main {
+/* Mobile Navigation (Hamburger-Menü) */
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  display: none;
+  color: var(--color-text-light);
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0.5em 0;
+  user-select: none;
+}
+.nav-menu {
+  /* Standard: horizontale Navigation (wird auf Mobile überschrieben) */
+  text-align: center;
+}
+
+/* Abschnittsformatierung */
+.section {
   max-width: 800px;
   margin: 2em auto;
   padding: 0 1em;
 }
-
-h1, h2, h3 {
-  color: #2F4F2F; /* etwas dunkleres Grün für Überschriften */
-}
-
-h1 {
+.section h2 {
   font-size: 1.8em;
   margin-bottom: 0.5em;
-  text-align: center;
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+  padding-bottom: 0.2em;
+}
+.section p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+.section ul {
+  margin-bottom: 1em;
 }
 
-h2 {
-  font-size: 1.4em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+/* Spezifische Sektionen und Elemente */
+.gstanzl-des-tages {
+  background: #f8efe2; /* leicht abgesetzter Hintergrund für Highlight */
+  padding: 1em;
+  border: 1px solid #e0d5c5;
+  border-radius: 5px;
 }
-
-h3 {
-  font-size: 1.2em;
-}
-
-p {
-  margin: 0.5em 0 1.2em 0;
-}
-
-ul {
-  margin: 0.5em 0 1.5em 1.2em;
-}
-
-ul li {
-  margin: 0.3em 0;
-}
-
-ul li a {
-  color: #336633;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  text-decoration: underline;
-}
-
-.verse {
-  margin: 1em 0;
-  padding-left: 0.5em;
-}
-
-.highlight {
-  background-color: #f9f9e0;
-  border-left: 4px solid #556B2F;
-  padding: 0.8em;
+.daily-quote {
   font-style: italic;
+  color: var(--color-secondary);
+  margin: 0.5em 0;
+  padding: 0.5em 1em;
+  position: relative;
+}
+.daily-quote q {
+  quotes: "„" "”"; /* deutsche Anführungszeichen für das q-Element */
+}
+.daily-quote q:before {
+  content: open-quote;
+}
+.daily-quote q:after {
+  content: close-quote;
+}
+.zufalls-hinweis {
+  font-size: 0.9em;
+  color: #555;
 }
 
-form {
-  max-width: 500px;
-  margin: 1em 0 2em 0;
+/* Listen der Sammlung (Gstanzl-Liste) */
+.gstanzl-list {
+  list-style: none;
+  padding-left: 0;
+}
+.gstanzl-list li {
+  background: #f2e8da;
+  border: 1px solid #e0d5c5;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 3px;
+}
+.gstanzl-list em {
+  color: var(--color-secondary);
+}
+.gstanzl-list small {
+  color: #555;
+}
+
+/* Kategorien-Liste */
+.category-list {
+  list-style: none;
   padding: 0;
+  margin: 0.5em 0 1em;
+}
+.category-list li {
+  display: inline-block;
+  margin: 0.3em 0.6em 0.3em 0;
+  background: #e8d8c0;
+  border-radius: 3px;
+}
+.category-list a {
+  padding: 0.4em 0.8em;
+  display: inline-block;
+  color: var(--color-primary);
+}
+.category-list a:hover {
+  background: var(--color-secondary);
+  color: var(--color-text-light);
+  border-radius: 3px;
 }
 
-label {
+/* Formular Mitmachen */
+.submit-form {
+  background: #f8efe2;
+  border: 1px solid #e0d5c5;
+  padding: 1em;
+  border-radius: 5px;
+}
+.form-group {
+  margin-bottom: 1em;
+}
+.form-group label {
   display: block;
-  margin: 0.5em 0 0.2em;
-  font-weight: 600;
+  font-weight: bold;
+  margin-bottom: 0.3em;
 }
-
-input, textarea, select, button {
-  font-family: inherit;
-}
-
-input[type="text"], input[type="email"], select, textarea {
+.form-group input, .form-group textarea, .form-group select {
   width: 100%;
   padding: 0.4em;
-  margin-bottom: 1em;
+  font-family: var(--font-body);
+  font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 3px;
-  font-size: 0.95em;
-  box-sizing: border-box;
 }
-
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
-  border-color: #88a066;
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+  border-color: var(--color-secondary);
   outline: none;
 }
-
-button[type="submit"] {
-  background-color: #556B2F;
-  color: #fff;
+.submit-button {
+  background: var(--color-secondary);
+  color: var(--color-text-light);
   font-weight: bold;
   padding: 0.6em 1.2em;
   border: none;
@@ -140,29 +232,87 @@ button[type="submit"] {
   cursor: pointer;
   font-size: 1em;
 }
-
-button[type="submit"]:hover {
-  background-color: #6b8e23;
+.submit-button:hover {
+  background: #a30000;
 }
 
-footer {
-  background-color: #f0f0f0;
-  padding: 1em 0;
+/* Kontaktbereich */
+.kontakt p {
+  margin-bottom: 0.5em;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0;
+}
+.social-links li {
+  display: inline;
+  margin-right: 1em;
+}
+.social-links a {
+  color: var(--color-secondary);
+}
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--color-primary);
+  color: var(--color-text-light);
   text-align: center;
+  padding: 1em 0.5em;
   font-size: 0.9em;
-  color: #555;
-  margin-top: 2em;
+}
+.site-footer p {
+  margin: 0;
 }
 
-@media (max-width: 600px) {
-  header ul {
+/* Responsive Design: Mobile Anpassungen */
+@media (max-width: 768px) {
+  /* Header and tagline */
+  .site-header .header-content {
+    padding: 0.5em;
+  }
+  .site-title {
+    font-size: 1.5em;
+  }
+  .site-tagline {
+    font-size: 1em;
+  }
+  /* Navigation: Hamburger einblenden, Menü vertikal anzeigen */
+  .nav-toggle-label {
+    display: block;
+    text-align: right;
+    padding: 0.5em 1em;
+  }
+  .nav-menu {
+    display: none;
+    /* zentrierte, vertikale Liste */
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    text-align: center;
   }
-  header li {
-    margin: 0.5em 0;
+  .nav-menu li {
+    display: block;
+    border-top: 1px solid rgba(255,255,255,0.3);
   }
-  main {
+  .nav-menu li:first-child {
+    border-top: none;
+  }
+  .nav-menu a {
+    display: block;
+    padding: 0.8em;
+  }
+  /* Wenn Toggle aktiviert, Menü anzeigen */
+  .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+    display: flex;
+  }
+  /* Sections: etwas kleinerer Text und Abstände reduzieren */
+  .section {
     padding: 0 0.5em;
+  }
+  .section h2 {
+    font-size: 1.5em;
   }
 }
