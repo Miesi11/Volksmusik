@@ -1,0 +1,82 @@
+<!-- kontakt.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakt, Impressum & Datenschutz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <a class="brand-link" href="index.html"><span class="logo">♣</span> Gstanzl & Wirtshauslieder</a>
+    <p class="tagline">Kontakt & rechtliche Hinweise</p>
+  </div>
+  <nav class="nav">
+    <input id="nav-toggle" type="checkbox" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    <ul class="nav-menu">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="ueber-gstanzln.html">Über Gstanzln</a></li>
+      <li><a href="sammlung.html">Sammlung</a></li>
+      <li><a href="kategorien.html">Kategorien</a></li>
+      <li><a href="mitmachen.html">Mitmachen</a></li>
+      <li><a class="active" href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content">
+  <header class="page-header">
+    <h1>Kontakt</h1>
+    <p>Schreib uns – wir freuen uns über Anregungen, Lob & Kritik.</p>
+  </header>
+
+  <section class="paper">
+    <h2>Kontaktformular</h2>
+    <form class="form" action="#" method="post">
+      <div class="form-row"><label for="cname">Name</label><input id="cname" name="cname" type="text" required></div>
+      <div class="form-row"><label for="cemail">E-Mail</label><input id="cemail" name="cemail" type="email" required></div>
+      <div class="form-row"><label for="cmsg">Nachricht</label><textarea id="cmsg" name="cmsg" rows="6" required></textarea></div>
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Senden</button>
+        <button class="btn" type="reset">Zurücksetzen</button>
+      </div>
+      <p class="muted">Hinweis: Dieses Formular ist ein Mockup ohne Serverfunktion.</p>
+    </form>
+  </section>
+
+  <section>
+    <h2>Impressum (Beispiel)</h2>
+    <p>Verantwortlich: Kulturverein „Wirtshausklang“, Musterweg 1, 4020 Linz, Österreich</p>
+    <p>E-Mail: kontakt@wirtshausklang.at • Tel.: +43 732 000000</p>
+  </section>
+
+  <section>
+    <h2>Datenschutz (Kurzfassung)</h2>
+    <p>Es werden auf dieser Beispielseite keine personenbezogenen Daten verarbeitet. Bei künftigen Formularfunktionen werden wir IP-Adressen, Zeitpunkte und Inhalte deiner Einsendungen nur zur Moderation speichern und nicht an Dritte weitergeben. Verantwortlicher ist der oben genannte Verein. Du hast Rechte auf Auskunft, Berichtigung und Löschung.</p>
+  </section>
+
+  <section class="ribbon">
+    <h2>Weiterentwicklung</h2>
+    <p>Geplant sind Audio-Beispiele, ein Zufalls-Generator sowie Filter & Suche. Feedback willkommen!</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="index.html">Start</a>
+    <a href="ueber-gstanzln.html">Über</a>
+    <a href="sammlung.html">Sammlung</a>
+    <a href="kategorien.html">Kategorien</a>
+    <a href="mitmachen.html">Mitmachen</a>
+    <a class="active" href="kontakt.html">Kontakt</a>
+  </nav>
+  <p>© 2025 Gstanzl & Wirtshauslieder</p>
+</footer>
+</body>
+</html>
