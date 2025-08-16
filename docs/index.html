@@ -1,161 +1,96 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gstanzl - Traditionelle österreichische Vierzeiler</title>
-  <!-- Google Fonts Einbindung: Merriweather (Fließtext) und Playfair Display (Überschriften) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Externes Stylesheet einbinden -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gstanzl & Wirtshauslieder – Start</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+<header class="site-header">
+  <div class="brand">
+    <a class="brand-link" href="index.html"><span class="logo">♣</span> Gstanzl & Wirtshauslieder</a>
+    <p class="tagline">Traditionelle Vierzeiler & Lieder – modern präsentiert</p>
+  </div>
+  <nav class="nav">
+    <input id="nav-toggle" type="checkbox" class="nav-toggle" aria-label="Menü umschalten">
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
+    <ul class="nav-menu">
+      <li><a class="active" href="index.html">Start</a></li>
+      <li><a href="ueber-gstanzln.html">Über Gstanzln</a></li>
+      <li><a href="sammlung.html">Sammlung</a></li>
+      <li><a href="kategorien.html">Kategorien</a></li>
+      <li><a href="mitmachen.html">Mitmachen</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- Seitenkopf mit Titel und Navigation -->
-  <header class="site-header">
-    <div class="header-content">
-      <h1 class="site-title">Gstanzl-Sammlung</h1>
-      <p class="site-tagline">Traditionelle Vierzeiler &ndash; humorvoll, bodenständig, echt österreichisch</p>
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Servus im Wirtshaus des guten Tons</h1>
+      <p>Gstanzln, Couplets und Wirtshauslieder – mit Herz, Humor und einem Augenzwinkern. Tauche ein in eine lebendige Tradition, liebevoll gesammelt und zeitgemäß aufbereitet.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="sammlung.html">Zur Sammlung</a>
+        <a class="btn" href="mitmachen.html">Eigenes Gstanzl einsenden</a>
+      </div>
     </div>
-    <!-- Navigationsmenü -->
-    <nav class="main-nav">
-      <!-- Checkbox-Hack für das mobile Menü -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label">&#9776; Menü</label>
-      <ul class="nav-menu">
-        <li><a href="#start">Startseite</a></li>
-        <li><a href="#ueber">Über Gstanzln</a></li>
-        <li><a href="#sammlung">Sammlung</a></li>
-        <li><a href="#kategorien">Kategorien</a></li>
-        <li><a href="#mitmachen">Mitmachen</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+    <figure class="hero-image">
+      <img src="images/wirtshaus-stube.jpg" alt="Wirtshausstube – Holz, Licht, Gemütlichkeit"/>
+      <figcaption>Bildplatzhalter – Wirtshausstimmung</figcaption>
+    </figure>
+  </section>
 
-  <!-- Startseite / Home Section -->
-  <main>
-    <section id="start" class="section startseite">
-      <h2>Willkommen auf unserer Gstanzl-Website!</h2>
-      <p>Hier dreht sich alles um traditionelle österreichische <strong>Gstanzln</strong> &ndash; kurze, humorvolle Vierzeiler, mit denen man andere augenzwinkernd auf die Schaufel nimmt. Entdecke unsere umfangreiche Sammlung, erfahre Wissenswertes über die Geschichte dieser besonderen Liedform und lass dich von der Vielfalt überraschen.</p>
-      <p>Auf unserer Seite findest du Gstanzln zu vielen Themen – von Liebe über Spott bis Politik. Stöbere in der <a href="#sammlung">Sammlung</a> oder wähle eine <a href="#kategorien">Kategorie</a>, um gezielt Gstanzln zu deinem Lieblingsthema zu lesen. Und wenn dich die Muse küsst, kannst du unter <a href="#mitmachen">Mitmachen</a> sogar dein eigenes Gstanzl einsenden!</p>
-    </section>
+  <section class="daily highlight">
+    <h2>Gstanzl des Tages</h2>
+    <blockquote class="quote-card">
+      <p>Mei Dirndl lacht liab,<br>wia a Sonn auf der Wiesn,<br>nur kocht’s a bissl schief –<br>drum essen ma beim Priesen.</p>
+      <footer>– „aus’m Wirtshausg’wurl“, Oberösterreich, trad.</footer>
+    </blockquote>
+    <p class="muted">Bald als Feature: <em>Zufalls-Gstanzl</em> bei jedem Laden und ein Button, der dich überraschen lässt.</p>
+  </section>
 
-    <!-- Gstanzl des Tages Section -->
-    <section class="section gstanzl-des-tages">
-      <h2>Gstanzl des Tages</h2>
-      <blockquote class="daily-quote">
-        <p><q>Mei Dirndl is hübsch,<br>
-        wia a Engerl im Licht,<br>
-        nur kochen, des ko s' net &ndash;<br>
-        besser lern s' es nicht.</q></p>
-      </blockquote>
-      <p class="zufalls-hinweis"><em>Demnächst: Ein Zufalls-Gstanzl auf Knopfdruck &ndash; wir arbeiten an einem Generator, der dir per Klick ein zufälliges Gstanzl aus unserer Sammlung anzeigt!</em></p>
-      <p>Viel Spaß beim Schmökern und Lauschen &ndash; und denk dran: <strong>Wer ko, der ko</strong> (wer kann, der kann)! In diesem Sinne, frohes Gstanzl-Singen!</p>
-    </section>
-
-    <!-- Über Gstanzln Section -->
-    <section id="ueber" class="section ueber-gstanzln">
-      <h2>Über Gstanzln</h2>
+  <section class="grid-3 teasers">
+    <article class="card">
+      <img src="images/steirische.jpg" alt="Ziehharmonika – Symbolbild"/>
       <h3>Was ist ein Gstanzl?</h3>
-      <p>Ein <strong>Gstanzl</strong> ist ein kurzer, meist vierzeiliger Reim in Mundart, der humorvoll und oft auch ein wenig derb daherkommt. Mit einem Gstanzl kann man jemanden liebevoll &ndash; oder auch einmal etwas deftiger &ndash; auf die Schaufel nehmen, also scherzhaft aufziehen. Wichtig dabei: Solange der Spaß nicht unter die Gürtellinie geht, nimmt es auch derjenige, der auf’s Korn genommen wird, nicht übel. Im Gegenteil: Wer bei einem Gstanzl-Abend gar nicht erwähnt wird, der ist eigentlich gar niemand – ein wenig geneckt zu werden gehört also dazu!</p>
-      <p>Gstanzln gehören zum alpenländischen Brauchtum und sind eine traditionelle Form des Liedguts in Österreich und Bayern. Es handelt sich um kurze, pointierte Strophen mit Reim, die oft spontan gedichtet und gesungen werden. In der Regel bestehen sie aus vier Zeilen mit zwei Reimpaaren &ndash; das ist die klassische Gstanzl-Form. Diese eingängige Struktur macht es leicht, humorvolle Botschaften prägnant rüberzubringen. Es gibt aber auch Varianten mit acht Zeilen oder sogar längeren Formen, doch der Vierzeiler ist am weitesten verbreitet.</p>
-      <h3>Herkunft und Tradition</h3>
-      <p>Der Begriff <em>Gstanzl</em> leitet sich vermutlich vom italienischen Wort <em>&ldquo;stanza&rdquo;</em> (Strophe) ab. Entstanden sind Gstanzln in der Volkskultur des Alpenraums, und viele Volkslieder setzen sich aus aneinandergereihten Gstanzln zusammen &ndash; oft garniert mit einem jodelartigen Ruf am Ende. Je nach Region gibt es unterschiedliche Bezeichnungen: In Oberösterreich sagt man <em>Gstanzl</em> oder <em>Tanzl</em>, in Niederösterreich auch <em>Gsangl</em> oder <em>Sprichl</em>, in Bayern kennt man Begriffe wie <em>Schnaderhüpfl</em> oder <em>Schnaderhaxl</em>, und in Salzburg heißen sie gern auch <em>Stieglhupfa</em>. Trotz der vielen Namen ist das Prinzip immer ähnlich: kurze, gereimte Spottverse, die zum Schmunzeln bringen.</p>
-      <p>Gstanzln werden traditionell bei verschiedensten Anlässen vorgetragen. Ob bei Volksfesten, Hoagarten (musikalischen Runden), beim Heurigen (Weinlokal) oder auf Hochzeiten &ndash; überall dort, wo gesungen und gefeiert wird, sind Gstanzln zu Hause. Meist werden sie von Musik (zum Beispiel Ziehharmonika oder Gitarre) begleitet. Ein geübter Gstanzlsänger kann spontan aus dem Stegreif dichten und so auf aktuelle Ereignisse oder anwesende Personen eingehen &ndash; sehr zur Gaudi des Publikums. Dieses spontane &ldquo;Ansingen&rdquo; sorgt oft für Lachsalven und kann stundenlang weitergehen, ohne dass es langweilig wird.</p>
-      <h3>Gstanzl heute &ndash; lebendig und beliebt</h3>
-      <p>Auch in der modernen Zeit sind Gstanzln lebendig geblieben. Es gibt sogar Wettbewerbe, sogenannte <strong>Gstanzl-Battles</strong>, bei denen Gstanzlsängerinnen und -sänger ihr Können messen. In verschiedenen Kategorien &ndash; etwa politische Gstanzln oder Hochzeitsgstanzln &ndash; treten sie gegeneinander an und improvisieren humorvolle Strophen. Eine Jury und das Publikum küren dann den besten Verseschmied. Solche Events, ebenso wie regelmäßige Gstanzlsänger-Treffen (besonders beliebt in Salzburg, Oberösterreich und Bayern), tragen dazu bei, dass die Tradition weiterlebt und auch junge Leute ihren Spaß daran finden.</p>
-      <p>Früher waren es vor allem Männer, die Gstanzln gesungen haben. Heute schwingen aber auch immer mehr Frauen gekonnt die ironische Klinge und mischen die Männerrunde mit spitzer Zunge auf. Das Gstanzlsingen fördert Geselligkeit und kreativen Witz &ndash; und es verbindet Generationen. Vom Großvater bis zur Enkelin können alle gemeinsam lachen, wenn ein frecher Vers gelungen ist.</p>
-      <h3>Ausblick: Unsere Website &amp; Zukunftspläne</h3>
-      <p>Wir hoffen, dass du auf unserer Gstanzl-Website viel Freude hast &ndash; doch damit nicht genug! Wir haben noch einiges vor, um die Seite noch interaktiver und umfangreicher zu gestalten:</p>
-      <ul class="future-plans">
-        <li><strong>Zufalls-Gstanzl: </strong>Ein Generator, der dir per Knopfdruck ein zufälliges Gstanzl aus der Sammlung anzeigt (in Arbeit).</li>
-        <li><strong>Audio-Ecke: </strong>Eine Hör-Ecke ist geplant, in der du ausgewählte Gstanzln auch anhören kannst.</li>
-        <li><strong>Filter &amp; Suche: </strong>Bald wirst du Gstanzln nach Themen oder Stimmung filtern und durchsuchen können, um schnell passende Vierzeiler zu finden.</li>
-      </ul>
-    </section>
+      <p>Kurz, pointiert, oft frech – vier Zeilen, die treffen. Herkunft, Formen und heutige Bedeutung.</p>
+      <a class="link-arrow" href="ueber-gstanzln.html">Mehr erfahren →</a>
+    </article>
+    <article class="card">
+      <img src="images/noten.jpg" alt="Notenblatt – Symbolbild"/>
+      <h3>Sammlung</h3>
+      <p>Über 50 Gstanzln & 20 Wirtshauslieder – liebevoll geordnet nach Thema, Stimmung & Region.</p>
+      <a class="link-arrow" href="sammlung.html">Zur Sammlung →</a>
+    </article>
+    <article class="card">
+      <img src="images/holztafel.jpg" alt="Holztafel – Symbolbild"/>
+      <h3>Mitmachen</h3>
+      <p>Dein Vierzeiler soll hier glänzen? Reiche dein Gstanzl ein – mit Etikette & Humor.</p>
+      <a class="link-arrow" href="mitmachen.html">Jetzt beitragen →</a>
+    </article>
+  </section>
 
-    <!-- Sammlung Section (Beispiele aus der Sammlung) -->
-    <section id="sammlung" class="section sammlung">
-      <h2>Gstanzl-Sammlung</h2>
-      <p>Unsere Sammlung umfasst zahlreiche Gstanzln aus verschiedenen Themenbereichen. Hier ein kleiner Einblick in die Vielfalt:</p>
-      <ul class="gstanzl-list">
-        <li><em>&bdquo;I geh mit mein Dirl auf'n Tanz, weil tanzen, das kann s' ganz&ldquo;</em> <small>&ndash; (Humor)</small></li>
-        <li><em>&bdquo;Im Wirtshaus, do gehts lustig zua, bei Bier und a Musi nur&ldquo;</em> <small>&ndash; (Geselligkeit)</small></li>
-        <li><em>&bdquo;Ka Mäderl ist schea, es fehlt nur a Schnapserl&ldquo;</em> <small>&ndash; (Spaß)</small></li>
-      </ul>
-      <p class="sammlung-hinweis">Besuche regelmäßig unsere Sammlung – es kommen stetig neue Gstanzln dazu. Viel Spaß beim Schmökern!</p>
-    </section>
+  <section class="ribbon">
+    <h2>Worum geht’s auf dieser Seite?</h2>
+    <p>Wir bewahren und feiern österreichische Wirtshauskultur. Hier findest du Reime, Lieder und Wissen – offen, kostenlos und zum Schmunzeln. Ideal für Musikant:innen, Hochzeiten, Kirta, Heurige & Stammtische.</p>
+  </section>
+</main>
 
-    <!-- Kategorien Section -->
-    <section id="kategorien" class="section kategorien">
-      <h2>Kategorien</h2>
-      <p>Entdecke Gstanzln passend zu deinem Interesse:</p>
-      <ul class="category-list">
-        <li><a href="#sammlung">Liebe</a></li>
-        <li><a href="#sammlung">Humor &amp; Spott</a></li>
-        <li><a href="#sammlung">Politik</a></li>
-        <li><a href="#sammlung">Tradition</a></li>
-        <li><a href="#sammlung">Festlich (Hochzeit)</a></li>
-      </ul>
-      <p class="kategorien-hinweis">... und viele mehr! Wähle eine Kategorie, um entsprechende Gstanzln anzuzeigen.</p>
-    </section>
-
-    <!-- Mitmachen Section (Einsende-Formular) -->
-    <section id="mitmachen" class="section mitmachen">
-      <h2>Mitmachen &ndash; Dein eigenes Gstanzl einsenden</h2>
-      <p>Die Gstanzl-Tradition lebt vom Mitmachen! Hast du selbst ein Gstanzl gedichtet? Schick es uns und teile es mit der Welt:</p>
-      <form class="submit-form" action="#" method="post">
-        <div class="form-group">
-          <label for="name">Dein Name:</label>
-          <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Deine E-Mail:</label>
-          <input type="email" id="email" name="email" placeholder="name@example.com" required>
-        </div>
-        <div class="form-group">
-          <label for="gstanzl-text">Dein Gstanzl:</label>
-          <textarea id="gstanzl-text" name="gstanzl-text" rows="4" placeholder="Schreibe hier dein Gstanzl..." required></textarea>
-        </div>
-        <div class="form-group">
-          <label for="category">Kategorie:</label>
-          <select id="category" name="category">
-            <option value="">Wähle eine Kategorie</option>
-            <option value="Liebe">Liebe</option>
-            <option value="Humor">Humor/Spott</option>
-            <option value="Politik">Politik</option>
-            <option value="Tradition">Tradition</option>
-            <option value="Festlich">Festlich (z.B. Hochzeit)</option>
-            <option value="Andere">Andere</option>
-          </select>
-        </div>
-        <button type="submit" class="submit-button">Gstanzl einsenden</button>
-      </form>
-      <p class="mitmachen-hinweis"><em>Hinweis:</em> Dieses Formular ist ein Platzhalter (ohne tatsächliche Funktion). In Zukunft soll hier dein Gstanzl direkt in unsere Sammlung aufgenommen werden können.</p>
-    </section>
-
-    <!-- Kontakt Section -->
-    <section id="kontakt" class="section kontakt">
-      <h2>Kontakt</h2>
-      <p>Fragen, Feedback oder Ideen? Wir freuen uns auf deine Nachricht!</p>
-      <p><strong>E-Mail:</strong> <a href="mailto:gstanzl@example.com">gstanzl@example.com</a><br>
-         <strong>Telefon:</strong> +43 123 456789<br>
-         <strong>Adresse:</strong> Musterweg 1, 1010 Wien, Österreich</p>
-      <p>Oder besuche uns auf Social Media:</p>
-      <ul class="social-links">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- Footer mit Copyright -->
-  <footer class="site-footer">
-    <p>&copy; 2025 Gstanzl-Sammlung (Beispielprojekt)</p>
-  </footer>
-
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="index.html">Start</a>
+    <a href="ueber-gstanzln.html">Über</a>
+    <a href="sammlung.html">Sammlung</a>
+    <a href="kategorien.html">Kategorien</a>
+    <a href="mitmachen.html">Mitmachen</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <p>© 2025 Gstanzl & Wirtshauslieder • Ein Kulturprojekt aus Österreich</p>
+</footer>
 </body>
 </html>
