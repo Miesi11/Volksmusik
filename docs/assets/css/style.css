@@ -106,7 +106,7 @@ a:hover{color:#a32020}
 }
 .card img{width:100%;border-radius:8px}
 .link-arrow{font-weight:700}
-.link-arrow::after{content:" \2192";transition:.2s transform}
+.link-arrow::after{content:" →";transition:.2s transform}
 .link-arrow:hover::after{transform:translateX(2px)}
 
 /* Quote Card */
@@ -130,7 +130,7 @@ a:hover{color:#a32020}
 }
 
 /* Definition list look */
-.def-list{list-style: "\266A  ";padding-left:1rem}
+.def-list{list-style: "♪  ";padding-left:1rem}
 .def-list li{margin:.3rem 0}
 
 /* Gallery */
@@ -148,11 +148,11 @@ a:hover{color:#a32020}
 .verse h3,.song h3{font-family:var(--font-head);margin:.2rem 0 .4rem}
 .meta{color:#666;font-size:.95rem;margin:.2rem 0 .6rem}
 .verse p,.song p{margin:.2rem 0}
-.song h3::before{content:"\266B ";color:var(--dunkelgruen)}
+.song h3::before{content:"♬ ";color:var(--dunkelgruen)}
 
 /* Category cards */
 .cat-grid .cat-card{background:var(--ivory);border:1px solid #eadfcd;border-radius:10px;padding:1rem;box-shadow:var(--shadow)}
-.jump-list{list-style:"\2022  ";padding-left:1rem;margin:.4rem 0}
+.jump-list{list-style:"•  ";padding-left:1rem;margin:.4rem 0}
 .jump-list a{font-weight:700}
 
 /* Ribbons */
